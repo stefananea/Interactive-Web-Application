@@ -1,0 +1,53 @@
+[
+    {
+      "intrebare": "1. Care este extensia fișierelor Word moderne?",
+      "variante": [".doc", ".docx", ".txt", ".pages"],
+      "corect": 1
+    },
+    {
+      "intrebare": "2. Ce format este folosit pentru documente portabile?",
+      "variante": [".pdf", ".exe", ".html", ".rar"],
+      "corect": 0
+    },
+    {
+      "intrebare": "3. Ce aplicație este folosită frecvent pentru editarea PDF-urilor?",
+      "variante": ["Adobe Reader", "Notepad", "Paint", "WordPad"],
+      "corect": 0
+    },
+    {
+      "intrebare": "4. Care dintre acestea este un format de arhivare?",
+      "variante": [".zip", ".doc", ".ppt", ".xls"],
+      "corect": 0
+    },
+    {
+      "intrebare": "5. Ce program deschide documente .xlsx?",
+      "variante": ["Microsoft Excel", "Adobe Acrobat", "PowerPoint", "Word"],
+      "corect": 0
+    },
+    {
+      "intrebare": "6. Ce format este utilizat pentru prezentări?",
+      "variante": [".pptx", ".txt", ".csv", ".docx"],
+      "corect": 0
+    },
+    {
+      "intrebare": "7. Care dintre acestea este un program gratuit pentru documente?",
+      "variante": ["LibreOffice", "Adobe Illustrator", "Photoshop", "Premiere Pro"],
+      "corect": 0
+    },
+    {
+      "intrebare": "8. Ce înseamnă abrevierea PDF?",
+      "variante": ["Portable Document Format", "Printable Data File", "Public Document File", "Page Description File"],
+      "corect": 0
+    },
+    {
+      "intrebare": "9. Ce extensie are un fișier de text simplu?",
+      "variante": [".txt", ".mp3", ".pptx", ".exe"],
+      "corect": 0
+    },
+    {
+      "intrebare": "10. Care este aplicația implicită pentru fișierele .docx pe Windows?",
+      "variante": ["Microsoft Word", "Notepad", "WordPad", "Excel"],
+      "corect": 0
+    }
+  ]
+  
