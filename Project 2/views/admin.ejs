@@ -1,0 +1,22 @@
+<div class="index-box">
+  <h1>Panou Admin</h1>
+
+  <% if (utilizatori && utilizatori.length > 0) { %>
+    <h2>Utilizatori existenți</h2>
+    <ul>
+      <% utilizatori.forEach(u => { %>
+        <li><%= u.nume %> - rol: <%= u.rol %></li>
+      <% }) %>
+    </ul>
+  <% } %>
+
+  <h2>Adaugă un produs nou</h2>
+  <form action="/admin/adauga-produs" method="POST" class="admin-form">
+    <input type="text" name="nume" placeholder="Nume produs" required>
+    <input type="number" name="pret" placeholder="Preț" required step="0.01">
+    <button type="submit">Adaugă produs</button>
+  </form>
+
+  <a href="/" class="btn">Înapoi la Home</a>
+</div>
+

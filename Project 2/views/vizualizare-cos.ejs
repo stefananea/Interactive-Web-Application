@@ -1,0 +1,21 @@
+<div class="index-box">
+  <h1>Coșul tău</h1>
+
+  <% if (produse.length > 0) { %>
+    <ul>
+      <% produse.forEach(p => { %>
+        <li>
+          <%= p.nume %> - <%= p.pret %> RON
+          <form action="/sterge-din-cos" method="POST" style="display:inline;">
+            <input type="hidden" name="id" value="<%= p.id %>">
+            <button class="delete-btn" type="submit">Șterge din coș</button>
+          </form>
+        </li>
+      <% }) %>
+    </ul>
+  <% } else { %>
+    <p>Coș gol</p>
+  <% } %>
+
+  <a href="/" class="btn">Înapoi la produse</a>
+</div>

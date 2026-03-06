@@ -1,0 +1,16 @@
+<div class="auth-box">
+    <h1>Chestionar Documente
+    </h1>
+
+    <% if (mesajEroare) { %>
+        <p class="error-message"><%= mesajEroare %></p>
+    <% } %>
+
+    <form action="/verificare-autentificare" method="POST">
+        <input type="text" name="utilizator" placeholder="Utilizator" required>
+        <input type="password" name="parola" placeholder="Parolă" required>
+        <button type="submit">Autentificare</button>
+    </form>
+
+    <footer>© Chestionar Documente 2025</footer>
+</div>

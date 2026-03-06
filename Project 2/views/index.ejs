@@ -1,0 +1,43 @@
+<div class="index-box">
+    <h1>Chestionar Documente</h1>
+
+    <% if (utilizator) { %>
+        <p class="logged-in">Te-ai logat cu succes!</p>
+
+        <form action="/logout" method="POST">
+            <button type="submit">Deconectare</button>
+        </form>
+
+        <p>Bine ai venit!</p>
+
+        <% if (utilizator && utilizator.rol === 'admin') { %>
+            <a href="/admin" class="btn">Panou Admin</a>
+        <% } %>
+
+
+        <a href="/chestionar" class="btn">Intră în chestionar</a><p></p>
+
+        <a href="/creare-bd" class="btn">Creare BD</a>
+        
+        <a href="/inserare-bd" class="btn">Încarcare BD</a>
+
+        <h2>Produse în baza de date:</h2>
+        <ul>
+            <% produse.forEach(p => { %>
+                <li>
+                    <%= p.nume %> - <%= p.pret %> RON
+
+                    <form action="/adaugare_cos" method="POST" style="display:inline;">
+                        <input type="hidden" name="id" value="<%= p.id %>">
+                        <button type="submit">Adaugă în coș</button>
+                    </form>
+                </li>
+            <% }) %>
+        </ul>
+
+    <% } else { %>
+        <a href="/autentificare" class="btn">Autentificare</a>
+    <% } %>
+
+    <footer>© Chestionar Documente 2025</footer>
+</div>

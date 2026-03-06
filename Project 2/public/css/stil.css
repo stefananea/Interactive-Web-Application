@@ -1,0 +1,293 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fdf6f0; /* crem deschis */
+    font-family: 'Inter', sans-serif;
+    color: #3e2f1c; /* maro închis */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #7b4f2c; /* maro mediu */
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav h1 {
+    font-size: 28px;
+}
+
+/* Container pentru conținut */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fffaf5; /* crem foarte deschis */
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Formular */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+legend {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #5a3c27;
+}
+
+label {
+    display: block;
+    background: #f1e5d3; /* crem */
+    padding: 10px 14px;
+    border-radius: 6px;
+    margin: 6px 0;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+label:hover {
+    background-color: #e4d2b8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 14px;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #f1e5d3;
+    color: #6d4c31;
+}
+
+/* Titluri și paragrafe */
+h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #3e2f1c;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Link-uri */
+a {
+    color: #a86f43;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #7b4f2c;
+}
+
+/* Container pentru autentificare și index */
+.auth-box,
+.index-box {
+    max-width: 500px;
+    margin: 60px auto;
+    background: #fffaf5;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+/* Mesaj de eroare */
+.error-message {
+    color: #c0392b;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Mesaj stare autentificare */
+.logged-in {
+    color: #27ae60;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Stil butoane */
+button,
+.btn {
+    cursor: pointer;
+    background: linear-gradient(135deg, #a86f43, #7b4f2c);
+    color: white !important;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 40px;
+    box-shadow: 0 6px 12px rgba(168, 111, 67, 0.4);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    text-align: center;
+    margin: 10px 5px;
+    text-decoration: none;
+    user-select: none;
+}
+
+button:hover,
+.btn:hover {
+    background: linear-gradient(135deg, #7b4f2c, #5e3d26);
+    box-shadow: 0 8px 16px rgba(91, 57, 28, 0.5);
+    transform: translateY(-3px);
+}
+
+button:active,
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(91, 57, 28, 0.4);
+}
+
+form.inline-button {
+    display: inline;
+}
+
+button.inline {
+    padding: 6px 18px;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+/* Stilizare link ca buton */
+.index-box a.btn {
+    margin-top: 20px;
+}
+
+/* Lista produse cu buton inline */
+ul.produse-lista {
+    list-style-type: disc;
+    padding-left: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+ul.produse-lista li {
+    margin-bottom: 12px;
+}
+
+ul.produse-lista form {
+    display: inline;
+    margin-left: 15px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container, .auth-box, .index-box {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    button, .btn {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+}
+
+.nav {
+    position: relative;
+}
+
+.cos-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    color: #a86f43;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.cos-link:hover {
+    color: #5e3d26;
+}
+
+.cos-bulet {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background-color: #c0392b;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 3px 7px;
+    user-select: none;
+}
+
+/* Buton de ștergere */
+button.delete-btn {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+    vertical-align: middle;
+}
+
+button.delete-btn:hover {
+    background-color: #992d22;
+}
+
+/* Formular admin */
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    gap: 10px;
+}
+
+.admin-form input, .admin-form button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.admin-form button {
+    background-color: #7b4f2c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.admin-form button:hover {
+    background-color: #5e3d26;
+}

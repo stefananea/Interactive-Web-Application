@@ -1,0 +1,16 @@
+<p>Bine ai venit, <%= utilizator %>!</p>
+
+<form action="/rezultat-chestionar" method="POST">
+    <% intrebari.forEach((intrebare, index) => { %>
+        <fieldset>
+            <legend><%= intrebare.intrebare %></legend>
+            <% intrebare.variante.forEach((varianta, i) => { %>
+                <label>
+                    <input type="radio" name="intrebari[<%= index %>]" value="<%= i %>">
+                    <%= varianta %>
+                </label><br>
+            <% }) %>
+        </fieldset>
+    <% }) %>
+    <button type="submit">Trimite</button>
+</form>
